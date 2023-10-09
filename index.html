@@ -1,0 +1,323 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>SongSung Page</title>
+</head>
+
+<body>
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "1003601506490347");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">SongSung</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active">Home</li>
+                    <li class="menu-list-item">Songs</li>
+                    <li class="menu-list-item">Likes</li>
+                    <li class="menu-list-item">Popular</li>
+                    <li class="menu-list-item">Trends</li>
+
+                </ul>
+            </div>
+            <div class="profile-container">
+                <!-- <img class="profile-picture" src="img/MH Miyazi.png" alt="MH Miyazi"> -->
+                <div class="profile-text-container">
+                    <span class="profile-text">Change Mode</span>
+                    <!-- <i class="fas fa-caret-down"></i> -->
+                </div>
+                <div class="toggle">
+                    <i class="fas fa-moon toggle-icon"></i>
+                    <i class="fas fa-sun toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-container">
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/1.jpeg');">
+                <img class="featured-title" src="img/1.jpeg" alt="">
+                <p class="featured-desc"><h3>Neenaade Naa Lyrics</h3><br>
+                    Yuvarathnaa (Kannada)2020
+                    <br>
+
+                    Armaan Malik,
+                    Shreya Ghoshal<br>
+                    <br>
+                    4 min 13 sec
+                    <br>
+                    </p>
+                    <br>
+                <button class="featured-button">Listen</button>
+            </div>
+            <br>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Top Played</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Neenaade na Neenaade</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Yethake bogase thumba asse yagidhe</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Shake it pushpavathi</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/14.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Narasimha theme</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpeg" alt="">
+                            <span class="movie-list-item-title">Hindi</span>
+                            <p class="movie-list-item-desc">Kersari ya tera</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/6.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">RaRa Rakkamma</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Singara Siriye</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Listen This also</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/8.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Mungaru Mayele</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/9.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Kannu hodiyaka</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/10.jpeg" alt="">
+                            <span class="movie-list-item-title">Telugu</span>
+                            <p class="movie-list-item-desc">Rowdy baby</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/11.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Mungaru Male 2</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/12.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Kabza</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Neenaade na</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/16.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Shabdha vedhi</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="featured-content"
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/2.jpeg');">
+                <img class="featured-title" src="img/2.jpeg" alt="">
+                <p class="featured-desc"><h3>Yethake Bogase Thumba Lyrics</h3><br>
+                    Bell Bottom (Original Motion Picture Soundtrack)2019
+                    <br>
+                    Vijay Prakash<br><br>
+                    3 min 59 sec</p><br>
+                <button class="featured-button">Listen</button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/15.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">NEW RELEASES</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/14.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/5.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/4.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/7.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/2.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="img/3.jpeg" alt="">
+                            <span class="movie-list-item-title">Kannada</span>
+                            <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                                hic fugit similique accusantium.</p>
+                            <button class="movie-list-item-button">Listen</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
